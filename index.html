@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tesla Fleet API Public Key for dcwolf.com</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        .success { color: green; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tesla Fleet API Public Key Hosting</h1>
+        <p>This site hosts the public key required for Tesla Fleet API registration.</p>
+        
+        <h2>Public Key Location</h2>
+        <p>The public key is available at:</p>
+        <pre>https://[your-github-username].github.io/tesla-key-hosting/.well-known/appspecific/com.tesla.3p.public-key.pem</pre>
+        
+        <p class="success">If you can see this page, your hosting setup is working correctly!</p>
+        
+        <h2>Next Steps</h2>
+        <p>After confirming your public key is accessible at the URL above, complete the registration process with:</p>
+        <pre>python3 tesla_register.py register --client-id YOUR_CLIENT_ID --client-secret YOUR_CLIENT_SECRET</pre>
+    </div>
+</body>
+</html>
